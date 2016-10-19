@@ -83,7 +83,7 @@ h1 {
   width: 50px;
 }
 
-#bar-bottom {
+#bar-down {
   bottom: 0;
   height: 50px;
   min-width: 100%;
@@ -118,7 +118,7 @@ h1 {
     width: 40px;
   }
 
-  #bar-bottom {
+  #bar-down {
     height: 40px;
   }
 }
@@ -140,7 +140,7 @@ h1 {
     width: 30px;
   }
 
-  #bar-bottom {
+  #bar-down {
     height: 30px;
   }
 
@@ -180,7 +180,7 @@ h1 {
     display: none;
   } 
 
-  #bar-bottom {
+  #bar-down {
     height: 50px;
   }
 }
@@ -221,7 +221,7 @@ h1 {
     display: none;
   } 
 
-  #bar-bottom {
+  #bar-down {
     height: 30px;
   }
 }
