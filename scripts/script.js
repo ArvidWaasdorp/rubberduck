@@ -73,3 +73,6 @@ function resizeDiv() {
     vph = $(window).height();
     $('.page').css({'min-height': vph + 'px'});
 }
+
+
+
