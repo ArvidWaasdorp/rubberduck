@@ -1,12 +1,11 @@
 /*
 Inspired by :) http://jsfiddle.net/dLCwC/1/
 */
-
+var currentpage = 1;
+var pages = 2;
 
 $(document).ready(function(){
 
-  var pages = 2;
-  var currentpage = 1;
   var animatespeed = 400;
   var topspeed = 50;
 
@@ -21,7 +20,6 @@ $(document).ready(function(){
   }
     
   resizeDiv();
-
 
   window.onresize = function(event) {
     resizeDiv();
@@ -73,6 +71,3 @@ function resizeDiv() {
     vph = $(window).height();
     $('.page').css({'min-height': vph + 'px'});
 }
-
-
-
