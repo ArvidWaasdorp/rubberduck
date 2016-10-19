@@ -1,39 +1,31 @@
- *
- {
+ * {
   font-family: arial;
- }
+}
  
-
- body
- {
- margin: 0;
- }
  
-.page
-{
+.page {
   /*Do not change this value*/
   min-height: 100%;
   width: 100%;
   /*Do not change this value*/
-  margin: 0;
 }
 
- .page .content
- {
-  margin: 0;
-  padding: 0;
-
-}
- 
-.page1
-{
-  background-color: rgb(46, 204, 113);
+.page1 {
+  background-color: rgb(1, 204, 113);
+  position: relative;
+  z-index: -1;
 }
 
-.page2
-{
+.page2 {
   background-color: rgb(41, 128, 185);
 }
+
+.content {
+
+  min-width: 100%;
+
+}
+
 
 /*CSS for the bars*/
 .bar {
@@ -61,7 +53,25 @@
   bottom: 0;
   height: 50px;
   min-width: 100%;
-  background-color: #000;
-/*  background-image: url('../images/chevron-down.png');*/
+  background-image: url('../images/chevron-down.png');
 }
 /*CSS for the bars*/
+
+#image-title-what {
+  height: 600px;
+}
+
+#duck-image {
+
+  width: 1000px;
+  height: 400px;
+  background-image: url('../images/rubber-duck-debugging_2.jpg');
+  border-radius: 5px;
+
+  /*Enlage an image to 120% of its orginal height and width*/
+  transform: scale(1.2, 1.2);
+  transform-origin: 0 0;
+
+    margin-left: auto ;
+  margin-right: auto ;
+}
