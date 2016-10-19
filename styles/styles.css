@@ -11,7 +11,7 @@
 
 
 .logo {
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 70px;
 }
@@ -32,8 +32,12 @@
   text-decoration: none;
 }
 
+.nav-button:hover, .nav-button:active {
+  text-decoration: underline;
+}
+
 nav {
-  position: absolute;
+  position: fixed;
   top: 70px;
   right: 30px;
   width: 55%;
@@ -67,6 +71,41 @@ nav ul {
 
 }
 
+.quotes, .julia {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 500px;
+  top: 150px;
+}
+
+.quotes {
+  left: 70px;
+}
+
+.quotes h3 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.quotes p {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+  font-style: italic;
+  line-height: 20px;
+}
+
+span {
+  margin-top: 80px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+}
+
+
+.julia {
+  left: 200px;
+}
+
 =======
  body
  {
@@ -97,7 +136,7 @@ nav ul {
 
 .page2
 {
-  background-color: rgb(41, 128, 185);
+  background-color: #ffffff;
 }
 
 .page3
