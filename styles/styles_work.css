@@ -8,16 +8,30 @@
   src: url('../font/PermanentMarker.ttf');
 }
 
-@font-face {
-  
+@font-face { 
   font-family: 'Patrick Hand SC';
   src: url('../font/PatrickHandSC-Regular.ttf');
+}
+
+@font-face { 
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Regular.ttf');
+}
+
+@font-face { 
+  font-family: 'Roboto';
+  src: url('../font/Roboto-Regular.ttf');
+}
+
+@font-face { 
+  font-family: 'Open Sans';
+  src: url('../font/OpenSans-Regular.ttf');
 }
 /*Downloaded custom fonts*/
 
 /*Needed for the scrolling part*/
 .page {
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -28,6 +42,10 @@
 }
 
 .page2 {
+  background-color: #559e83;
+}
+
+body {
   background-color: #559e83;
 }
 /*Needed for the scrolling part*/
@@ -92,6 +110,66 @@ h1 {
 /*CSS for the bars*/
 
 
+.content .quotes {
+  width: 30%;
+  margin-bottom: : 60px;
+  clear: left;
+}
+
+.content-work {
+  position: relative;
+  display: inline-block;
+  
+  float: right;
+  width: 60%;
+  margin-right: 50px;
+  top: 150px;
+}
+
+.content-work h3 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 40px;
+}
+
+.content-work p {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  font-style: italic;
+  line-height: 20px;
+}
+
+.content-work ol {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  list-style-type: lower-alpha;
+}
+
+#ol-theduck {
+  margin-left: 250px;
+}
+
+#curve {
+  width: 100%;
+}
+
+#duck {
+  height: 200px;
+  float: left;
+}
+
+#duck-screen {
+  height: 150px;
+  float: right;
+}
+
+#empty {
+  margin-top: 30px;
+}
+
 
 /*Responive part*/
 @media screen and (max-width: 1280px) {
@@ -99,6 +177,7 @@ h1 {
     left: -170px; 
     width: 800px;
   }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -121,6 +200,25 @@ h1 {
   #bar-down {
     height: 40px;
   }
+
+  .content .quotes {
+    width: 25%;
+  }
+
+
+  .content .quotes {
+    top: 90px;
+
+    left: 20px;
+    width: 25%;
+  }
+
+  .content-work {
+    top: 90px;
+    width: 63%;
+    margin-right: 20px;
+  }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -153,6 +251,29 @@ h1 {
   nav {
     top: 40px;
   }
+
+  .content .quotes {
+    top: 60px;
+
+    left: 20px;
+    width: 25%;
+  }
+
+  .content-work {
+    top: 60px;
+    width: 63%;
+    margin-right: 20px;
+  }
+  
+  #duck {
+    width: 150px;
+    height: 150px;
+  }
+
+  #ol-theduck {
+    margin-left: 40px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -183,6 +304,50 @@ h1 {
   #bar-down {
     height: 50px;
   }
+
+  .content .quotes {
+    top: 80px;
+    left: 5px;
+    width: 25%;
+  }
+
+  .content-work {
+    width: 65%;
+    top: 80px;
+    margin-right: 5px;
+  }
+
+  #curve, #duck-screen {
+    display: none;
+  }
+  
+  #duck {
+    width: 100px;
+    height: 100px;
+  }
+
+  #ol-theduck {
+    margin-left: 40px;
+  }
+
+  .quotes h3, .content-work h3 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .quotes p, .content-work p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    font-style: italic;
+    line-height: 18px;
+    font-size: 12px;
+  }
+
+  span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+  }
+
 }
 
 @media screen and (max-width: 320px) {

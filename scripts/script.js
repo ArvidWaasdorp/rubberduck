@@ -30,7 +30,13 @@ $(document).ready(function(){
   //When resizing the screen, the div should also resize
   window.onresize = function(event) {
     resizeDiv();          //Resize the div
-    scrolltocurrent();    //Make sure you stay in the current section/div(page) on the page
+
+    /*
+    Disable the function scrolltocurrent(). In some cases the page was not scrolling anymore.
+    The script tries first to find the top of the div again, before you can control it again
+    It was not given the correct result. For now the current mechanism works fine
+    */
+    //scrolltocurrent();    //Make sure you stay in the current section/div(page) on the page
   }
 
   //Check if the user use the scrollwheel
