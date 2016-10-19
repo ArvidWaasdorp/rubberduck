@@ -59,16 +59,19 @@ nav ul {
 
 .tagline {
   position: absolute;
-  left: 0; 
+/*  left: 0; 
   right: 0; 
   margin-left: auto; 
-  margin-right: auto; 
+  margin-right: auto; */
   width: 900px;
   top: 300px;
   font-family: 'Permanent Marker', cursive;
-  font-size: 80px;
+  font-size: 60px;
   color: white;
-
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .quotes, .julia {
