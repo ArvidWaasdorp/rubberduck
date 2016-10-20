@@ -195,17 +195,17 @@ function getCurentFileName(){
 //In case the order of the menu is changed, this must also change!
 function returnLeft (pageName) {
   switch (pageName) {
-    case 'about.html': 
-      return 'index.html';
-      break;
-    case 'events.html': 
+    case 'index.html': 
       return 'about.html';
       break;
     case 'work.html': 
-      return 'events.html';
+      return 'index.html';
       break;
-    case 'index.html': 
+    case 'events.html': 
       return 'work.html';
+      break;
+    case 'about.html': 
+      return 'events.html';
       break;
   }
 }
@@ -214,17 +214,17 @@ function returnLeft (pageName) {
 //In case the order of the menu is changed, this must also change!
 function returnRight (pageName) {
   switch (pageName) {
-    case 'about.html': 
-      return 'events.html';
-      break;
-    case 'events.html': 
+    case 'index.html': 
       return 'work.html';
       break;
     case 'work.html': 
-      return 'index.html';
+      return 'events.html';
       break;
-    case 'index.html': 
+    case 'events.html': 
       return 'about.html';
+      break;
+    case 'about.html': 
+      return 'index.html';
       break;
   }
 }
