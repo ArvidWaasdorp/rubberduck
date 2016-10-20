@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: #faf9f4;
-}
-
 .bar {
   background-repeat:no-repeat;
   background-size:contain;
@@ -167,7 +163,6 @@ span {
  body
  {
  margin: 0;
- background-color: #faf9f4;
  }
  
 
