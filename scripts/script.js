@@ -118,7 +118,7 @@ $(document).ready(function(){
     width = $(this).css('width');             //the current width will be saved
 
     $(this).css('cursor', 'pointer');         //Change the mouse cursor
-    $(this).css('width', returnWidth(width)); //Based on the width a value is returned
+    $(this).css('width', returnSize(width)); //Based on the width a value is returned
 
   });
   $('#bar-left').mouseout(function(){
