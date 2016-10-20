@@ -2,13 +2,33 @@
   box-sizing: border-box;
 }
 
-/* *
- {
-  font-family: arial;
- }
- */
+.bar {
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: center; 
+  position: absolute;
+}
 
+#bar-left {
+  left: 0;
+  background-image: url('../images/chevron-left.png');
+  min-height: 100%;
+  width: 50px;
+}
 
+#bar-right {
+  right:0;
+  background-image: url('../images/chevron-right.png');
+  min-height: 100%;
+  width: 50px;
+}
+
+#bar-down {
+  bottom: 0;
+  height: 50px;
+  min-width: 100%;
+  background-image: url('../images/chevron-down.png');
+}
 
 .logo {
   position: fixed;
@@ -74,24 +94,66 @@ nav ul {
   transition: color 0.4s ease;
 }
 
-.quotes, .julia {
+.title1, .title2 {
   position: relative;
-  display: inline-block;
-  float: left;
-  width: 500px;
+  margin: 0 auto;
+  width: 690px;
   top: 150px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px; 
+  text-align: center;
 }
 
-.quotes {
+.title1 {
+  background-color: #f2f2f2;
+  
+}
+
+.title1 h1 {
+  color: #354E59;
+}
+
+.title2 h1 {
+  color: #2F6B5F;
+}
+
+.quote1, .julia {
+  position: relative;
+  float: left;
+  width: 500px;
+  top: 200px;
+  padding-bottom: 50px; 
+  padding-top: 20px;
+
+}
+
+.quote1, .julia {
+  display: inline-block;
+  padding-bottom: 100px;
+}
+
+.quote1, .quote2, .quote3 {
   left: 70px;
 }
 
-.quotes h3 {
+.quote2, .quote3 {
+  position: relative;
+  float: left;
+  width: 800px;
+  top: 160px;
+}
+
+.quote3 {
+  padding-bottom: 50px;
+}
+
+.quote1 h3 {
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
 }
 
-.quotes p {
+.quote1 p, .quote2 p, .quote3 p {
   font-family: 'Open Sans', sans-serif;
   margin-top: 30px;
   font-style: italic;
@@ -104,10 +166,12 @@ span {
   line-height: 20px;
 }
 
-
 .julia {
   left: 200px;
 }
+
+
+
 
 =======
  body
