@@ -113,6 +113,16 @@ function resizeDiv() {
 
 $(document).ready(function(){
 
+  $('#page2').mouseover(function(){
+    $('.logo-link').css('color', '#354E59');
+    $('.nav-button').css('color', '#354E59');
+  });
+
+  $('#page1').mouseover(function(){
+    $('.logo-link').css('color', '#fcfd80');
+    $('.nav-button').css('color', '#fcfd80');
+  });
+
   //When mouse over change the cursor to an hand, and resize -10px
   $('#bar-left').mouseover(function(){
     width = $(this).css('width');             //the current width will be saved
@@ -168,6 +178,7 @@ $(document).ready(function(){
         document.location.hash = currentpage;
       });
   });
+
 });
 
 //Function that takes 1 argument, test is and returns a value
