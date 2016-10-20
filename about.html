@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page 1</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!-- ANIMATIE (is dit nodig?) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+    <!-- ANIMATION -->
+    <!-- <script src="scripts/animation.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Patrick+Hand+SC|Permanent+Marker|Roboto" rel="stylesheet">
+
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <title>RubberDuck inc. co.</title>
+  </head>
+  <body>
+
+    <!-- HTML for the bars -->
+    <div id="bar-left" class="bar"></div>
+    <div id="bar-right" class="bar"></div>
+    <div id="bar-bottom" class="bar"></div>
+    <!-- HTML for the bars -->
+
+    <!-- LOGO -->
+
+    <div class="logo">
+      <a href="/" class="logo-link">rubber duck</a>
+    </div>
+
+    <!-- NAV BAR -->
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-button">home</a></li>
+          <li><a href="work.html" class="nav-button">work</a></li>
+          <li><a href="events.html" class="nav-button">events</a></li>
+          <li><a href="about.html" class="nav-button">about</a></li>
+        </ul>
+      </nav>
+
+
+
+    <div class="main">
+      <div id="page1" class='page1 page'><a name="1"></a>
+        <div class='content'>
+
+          <div class="tagline">
+            <h1>Meet The Ducks!</h1>
+          </div>
+          
+
+        </div>
+      </div>
+      <div id="page2" class="page2 page"><a name="2"></a> 
+        <div class='content'>
+
+          <div class="team">
+            <div class="duck-box">
+              <img src="images/fay.jpg" class="duckies">
+              <img src="images/illona2.jpg" class="realpeople">
+              <h3>Illona Fedora</h3>
+              <p>Event Manager, Coach</p>
+              <p>illona@rubberduckinc.co</p>
+            </div>
+
+            <div class="duck-box">
+              <img src="images/arvid.jpg" class="duckies">
+              <img src="images/arvid2.png" class="realpeople">
+              <h3>Arvid Waasdorp</h3>
+              <p>CEO, Coach</p>
+              <p>Arvid@rubberduckinc.co</p>
+            </div>
+
+            <div class="duck-box">
+              <img src="images/fay.jpg" class="duckies">
+              <img src="images/fay2.jpg" class="realpeople">
+              <h3>Fay Gramberg</h3>
+              <p>General Manager, Coach</p>
+              <p>fay@rubberduckinc.co</p>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="contact">
+
+        <div class="contact-left">
+
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB88iNRHNit2X_P31xek33jogVwrnxZi_g'></script><div style='overflow:hidden;height:300px;width:300px;'><div id='gmap_canvas' style='height:300px;width:300px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://www.add-map.net/'>google maps widget html</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e586f798f162a67a2d8fe2342a4500a2514c36fc'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(52.348668998577736,4.824812113769541),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.348668998577736,4.824812113769541)});infowindow = new google.maps.InfoWindow({content:'<strong>Rubber Duck Inc.</strong><br>John M. Keynesplein 12-46<br>1066 EP  Amsterdam<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+          </div>
+
+          <div class="contact-right">
+
+            <h3>Let's KWEK!</h3>
+
+            <form>
+              <label for="fullname">Full name:</label><br>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="inquiry">Inquiries:</label><br>
+                <input type="text" id="inquiry" name="inquiry"><br>
+            </form>
+
+            <button id="submit">Submit</button>
+
+         </div>
+
+         <div class="clear">&nbsp;</div>
+      </div> 
+
+    </div>
+
+
+  </body>
+</html>

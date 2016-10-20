@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+/* *
+ {
+  font-family: arial;
+ }
+ */
+
+html {
+  font-family: open-sans, sans-serif;
+}
+
+.logo {
+  position: fixed;
+  top: 50px;
+  left: 70px;
+}
+
+.logo-link {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fcfd80;
+}
+
+.nav-button {
+  font-family: 'Montserrat', sans-serif;
+  color: #fcfd80;
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-button:hover, .nav-button:active {
+  text-decoration: underline;
+}
+
+nav {
+  position: fixed;
+  top: 70px;
+  right: 30px;
+  width: 55%;
+  z-index: 2000;
+}
+
+nav ul li {
+  display: inline;
+  float: right;
+  width: 15%;
+  text-align: left;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+
+}
+
+.tagline {
+  position: absolute;
+/*  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; */
+  width: 900px;
+  top: 300px;
+  left: 30%;
+  right: 30%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color: white;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.quotes, .julia {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 500px;
+  top: 150px;
+}
+
+.quotes {
+  left: 70px;
+}
+
+.quotes h3 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.quotes p {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+  font-style: italic;
+  line-height: 20px;
+}
+
+span {
+  margin-top: 80px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+}
+
+
+.julia {
+  left: 200px;
+}
+
+=======
+ body
+ {
+ margin: 0;
+ }
+ 
+
+.page
+{
+  /*Do not change this value*/
+  min-height: 100%;
+  width: 100%;
+  /*Do not change this value*/
+  margin: 0;
+}
+
+ .page .content
+ {
+  margin: 0;
+  padding: 0;
+
+}
+ 
+.page1
+{
+  background-color: #b042f4;
+}
+
+.page2
+{
+  background-color: #f48942;
+}
+
+.page3
+{
+  background-color: rgb(155, 89, 182);
+}
+ 
+.page4
+{
+  background-color: goldenrod;
+}
+ 
+.page5
+{
+  background-color: royalblue;
+}
+
+.page6
+{
+  background-color: red;
+}
+
+/*CSS for the bars*/
+.bar {
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: center; 
+  position: absolute;
+}
+
+#bar-left {
+  left: 0;
+  background-image: url('../images/chevron-left.png');
+  min-height: 100%;
+  width: 50px;
+}
+
+#bar-right {
+  right:0;
+  background-image: url('../images/chevron-right.png');
+  min-height: 100%;
+  width: 50px;
+}
+
+#bar-bottom {
+  bottom: 0;
+  height: 50px;
+  min-width: 100%;
+  background-image: url('../images/chevron-down.png');
+}
+
+/*======= about styling ======*/
+.team {
+  width: 68%;
+  margin: 0 auto 200px auto;
+  padding-top: 200px;
+}
+
+.duck-box{
+  float: left;
+  margin: 20px 40px;
+}
+
+.duck-box img {
+  width: 200px;
+  height: 200px;
+}
+
+.duckies{ 
+display: block;
+}
+.realpeople{
+  display: none;
+}
+.duck-box:hover .realpeople{
+display : block;
+}
+.duck-box:hover .duckies{
+display : none;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.clear{
+  clear: both;
+}
+
+/*======= contact styling ======*/
+
+.contact{
+  width: 68%;
+  margin: 0 auto 100px auto;
+}
+
+.contact-left{
+  float: left;
+  width: 48%;
+}
+
+.contact-right{
+  width: 48%;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+}
+
+input#inquiry{
+  height: 100px;
+}
+
+button#submit{
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 100px;
+}
+
+.contact-right h3 {
+  margin-bottom: 30px;
+}
