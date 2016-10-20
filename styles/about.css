@@ -244,12 +244,15 @@ h3 {
 
 .contact-left{
   float: left;
-  width: 48%;
+  width: 350px;
+  margin-top: 50px;
+  margin-left: 38px;
 }
 
 .contact-right{
-  width: 48%;
+  width: 420px;
   display: inline-block;
+  margin-top: 50px;
 }
 
 input {
