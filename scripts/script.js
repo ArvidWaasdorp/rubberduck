@@ -3,22 +3,22 @@ Inspired by :) http://jsfiddle.net/dLCwC/1/
 */
 
 //Some global variables to make the world a better place :)
-var currentpage = 1;
-var pages = 2;
+var currentpage = 1;  //The current page when the side is loaded. Default is 1
+var pages = 2;        //The amount of divs (id: page1, page2, ...)
 var width;
 var height;
 
 $(document).ready(function(){
 
   //Some local variables
-  var animatespeed = 400;
-  var topspeed = 50;
+  var animatespeed = 400;   //time of the animation
+  var topspeed = 50;        //scroll down with this speed
 
   var nextpage = currentpage + 1; if (nextpage > pages) { nextpage = pages; }
   var prevpage = currentpage - 1; if (prevpage < 1) { prevpage = 1; }
     
-  var animatingup = false;
-  var animatingdown = false;
+  var animatingup = false;    //Reset the scroll-up variable. Only done at initial page load
+  var animatingdown = false;  //Reset the scroll-up variable. Only done at initial page load
   
   if (document.location.hash) { 
     currentpage = parseInt(document.location.hash.replace('#', '')); 
@@ -52,17 +52,17 @@ $(document).ready(function(){
     if (animatingup == false) {
       if ($(window).scrollTop() + $(window).height() >= $('#page'+(nextpage)).offset().top + topspeed) {
         if (nextpage > currentpage) {
-          var p2 = $('#page' + (nextpage) );
-          var pageheight = p2.position().top;
-          animatingdown = true;
-          $('html, body').animate({
-              scrollTop: pageheight
+          var p2 = $('#page' + (nextpage) );        //Each div has a unique ID. jQuery searches the that div and puts it in a variable
+          var pageheight = p2.position().top;       //Set the point where the page must scroll to.  It is the top position of the div where you will scroll to  
+          animatingdown = true;                     
+          $('html, body').animate({                 //Animate to scroll down
+              scrollTop: pageheight                 //Scroll down to a certain place on the page. The top of the screen will be changed and you scroll along with it
             },
-            animatespeed,
+            animatespeed,                           //Animate in x miliseconds, it uses a variable declared when the page is loaded
             function(){
-              currentpage = nextpage;
-              animatingdown = false;
-              document.location.hash = currentpage;
+              currentpage = nextpage;               //Make the nextpage the current page (you are in the current page now)
+              animatingdown = false;                //Stop the scrolling when the height is reached
+              document.location.hash = currentpage; //Set the hash to the new page (#1 or #2)
             });
 
           return;
@@ -71,6 +71,7 @@ $(document).ready(function(){
     }
     
     //Is the user scrolling up?
+    //Function works similar as the scrolldown function, but only the other way around :) 
     if (animatingdown == false) {
       if ($(window).scrollTop() <= $('#page' + (currentpage)).offset().top - topspeed) {
         if (prevpage < currentpage) {
@@ -105,22 +106,25 @@ function scrolltocurrent() {
 
 //Resize the div when resizing the page
 function resizeDiv() {
-    vpw = $(window).width();
-    vph = $(window).height();
-    $('.page').css({'min-height': vph + 'px'});
+    vpw = $(window).width();      //the width of the div is the same as the width of the browser window
+    vph = $(window).height();     //the height of the div is the same as the height of the browser window
+    $('.page').css({'min-height': vph + 'px'}); //Set the minimum height the same as the heigth of the browser window. The height of the div can offcourse be longer than the height of the browser window 
 }
 
 
 $(document).ready(function(){
-
-  $('#page2').mouseover(function(){
-    $('.logo-link').css('color', '#354E59');
-    $('.nav-button').css('color', '#354E59');
-  });
-
+  //For readability purposes
+  //Make the logo and navigation for the second div #354E59
   $('#page1').mouseover(function(){
     $('.logo-link').css('color', '#fcfd80');
     $('.nav-button').css('color', '#fcfd80');
+  });
+
+  //For readability purposes
+  //Make the logo and navigation for the second div #354E59
+  $('#page2').mouseover(function(){
+    $('.logo-link').css('color', '#354E59');
+    $('.nav-button').css('color', '#354E59');
   });
 
   //When mouse over change the cursor to an hand, and resize -10px
@@ -169,19 +173,20 @@ $(document).ready(function(){
     var p2 = $('#page'+(nextpage));
     var pageheight = p2.position().top;
 
-    $('html, body').animate({
-      scrollTop: pageheight },
-      400,
-      function() {
-        currentpage = nextpage;
-        animatingdown = false;
-        document.location.hash = currentpage;
+    $('html, body').animate({                 //Animate the div
+      scrollTop: pageheight },                //Scroll up to the height of the div. In this case page1 > page 2
+      400,                                    //Speed of the animation
+      function() {                            //Trigger a new function to set some variables
+        currentpage = nextpage;               //The currentpage is equal to the nextpage (the new page so to say) 
+        animatingdown = false;                //Set the animationdown to false. Otherwise it will keep scrolling :)
+        document.location.hash = currentpage; //Set the location hash to #current page. Examp: lehttp://nycda.zone/waasdorp725/RubberDuck/#2
       });
   });
 
 });
 
 //Function that takes 1 argument, test is and returns a value
+//In this case it gets the height or width, and returns the new value. This will make the arrow to resize on mouseover
 function returnSize (width) {
   switch (width) {
     case '50px': 
